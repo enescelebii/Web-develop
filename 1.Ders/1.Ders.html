@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keyword" content="sayfanın etiketleri" />
+    <meta name="description" content="sayfanın içerdiği yorum bilgileri" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header tags</title>
+    <style>
+      canvas {
+        background-color: aqua;
+        text-align: center;
+        flex: auto;
+        border: 2px solid black;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Header elementleri-->
+    <h1>VEN_DEV</h1>
+    <span>google a gitmek için</span>
+    <a href="https://www.google.com" target="_blank">tıklayınız</a>
+    <br />
+    <img
+      src="/HTML dersleri/Fotograflar/download.jpg"
+      alt="fotoğraf bulunamadi"
+      width="100"
+    />
+    <img
+      src="/HTML dersleri/Fotograflar/download.jpg"
+      alt="fotoğraf bulunamadi"
+      width="100"
+    />
+    <br />
+    <audio controls autoplay loop muted>
+      <source
+        src="/HTML dersleri/Ses/Jakuzi - Koca Bir Saçmalık Official Video.mp3"
+      />
+    </audio>
+    <!-- hr (çizgi çizer) , br (alt satıra geçirir)-->
+    <hr />
+    <h2>VEN_DEV</h2>
+
+    <button type="button" onclick="">This is a button</button>
+
+    <br />
+    <br />
+    <a href="https://www.instagram.com/enescelebi__/" target="_blank">
+      <img
+        src="/HTML dersleri/Fotograflar/Instagram_icon.png.webp"
+        alt="bulunamadi"
+        width="100"
+        height="100"
+        usemap="#hedef"
+      />
+      <br />
+    </a>
+
+    <img
+      src="/HTML dersleri/Fotograflar/hedef tahtasi.jpg"
+      alt="hedef tahtasi"
+      height="100px"
+      width="200px"
+    />
+    <map name="hedef">
+      <area
+        shape="rect"
+        coords="0,0,100,100"
+        alt="hedef"
+        href="/Blog Sayfası/Site.html"
+      />
+    </map>
+    <b>
+      <h3 title="i am a header">VEN_DEV</h3>
+      <a href="#1a">Jump to down</a>
+      <br />
+      <span style="font-size: 300%; color: red">
+        anan<sub>subscript</sub>anan <sup>anan</sup>
+      </span>
+    </b>
+    <br />
+    <input type="text" placeholder="naber" />
+    <input type="button" name="nnnn" />
+    <input type="color" />
+    <input type="date" />
+    <input type="datetime" />
+    <input type="email" placeholder="email" />
+    <input type="file" />
+    <input type="hidden" />
+    <input type="number" />
+    <input type="password" placeholder="password" />
+    <input type="radio" />
+    <input type="range" />
+    <br />
+    <input type="reset" />
+    <input type="search" />
+    <input type="submit" />
+    <input type="tel" />
+    <input type="url" />
+    <ol>
+      <li>
+        İç Donanım Birimleri
+        <ol type="I">
+          <li>Anakart</li>
+          <li>İşlemci</li>
+          <li>Bellek</li>
+        </ol>
+      </li>
+      <li>
+        Dış Donanım Birimleri
+        <ol type="1">
+          <li>
+            Monitör
+            <ol type="a">
+              <li>LCD</li>
+              <li>LED</li>
+            </ol>
+          </li>
+          <li>Klavye</li>
+          <li>Fare</li>
+        </ol>
+      </li>
+    </ol>
+    <video
+      src="/HTML dersleri/video/SampleVideo_1280x720_2mb.mp4"
+      controls
+      autoplay
+      loop
+      muted
+      height="200px"
+      width="300px"
+    ></video>
+    <i>
+      <h4>FORMATTİNG SIDE</h4>
+    </i>
+    <ol style="font-size: larger" type="I">
+      <li><b>BOLD</b></li>
+      <li><strong>Strong</strong></li>
+      <li><i>italic</i></li>
+      <li><em>Emphasized</em></li>
+      <li><mark>marked</mark></li>
+      <li><small>small</small></li>
+      <li><del>deleted text</del></li>
+      <li><ins>inserted</ins></li>
+      <li><abbr title="example">i have title</abbr></li>
+      <li><q>i have quotation</q></li>
+    </ol>
+    <h5>VEN_DEV</h5>
+    <span style="font-size: 400%; font-style: italic"> yeyerim</span>
+    <h6 style="margin: 5px">VEN_DEV</h6>
+    <p style="font-weight: bold; margin: 5px">selam</p>
+    <table border="2">
+      <tr>
+        <th colspan="4">KADER</th>
+      </tr>
+      <tr>
+        <th>power:</th>
+        <td>mistik</td>
+        <td>sistik</td>
+        <td>intik</td>
+      </tr>
+      <tr>
+        <th style="font-weight: bold">Time:</th>
+        <td>eternal</td>
+        <td>teternal</td>
+        <td>paternal</td>
+      </tr>
+      <tr>
+        <th colspan="4" rowspan="1">Blinks</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Name-></th>
+        <td>Enes</td>
+        <td>***</td>
+        <td><-size</td>
+      </tr>
+      <tr>
+        <td>Cafer</td>
+        <td>*****</td>
+        <td><-size</td>
+      </tr>
+    </table>
+    <table
+      id="1a"
+      style="border-color: red; border: 2px; background-color: chartreuse"
+    >
+      <tr>
+        <th colspan="3">Product</th>
+      </tr>
+      <tr>
+        <th>No</th>
+        <th>P.Name</th>
+        <th>P.Count</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>Pen</td>
+        <td rowspan="3">50</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Book</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Dust</td>
+      </tr>
+    </table>
+
+    <canvas></canvas>
+  </body>
+</html>
