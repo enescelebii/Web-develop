@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog site</title>
     <link rel="stylesheet" href="styles.css" />
-
+    <script src="javascript.js"></script>
     <style>
+      body {
+        background-color: rgb(229, 224, 224);
+      }
       a:link,
       a:visited {
         background-color: #f44336;
@@ -28,13 +31,30 @@
         height: 200px;
         background-color: antiquewhite;
       }
+      #example-id {
+        color: greenyellow;
+      }
     </style>
   </head>
 
   <body>
+    <script>
+      var element = document.createElement("p");
+      element.textContent = "hello";
+      document.body.appendChild(element);
+    </script>
+
     <div class="kart" style="align-content: center">
       <a href="https://www.google.com" target="_blank">Google</a>
     </div>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button
+      type="button"
+      onclick='document.getElementById("demo").textContent = "Hello JavaScript!"'
+    >
+      Click Me!
+    </button>
     <form action="Site.html">
       <label for="fname"><em>First name:</em></label
       ><br />
@@ -56,8 +76,8 @@
 
       <input type="submit" value="Submit" />
     </form>
-    <p>Choose your favorite Web language:</p>
-    <form>
+    <p style="color: red">Choose your favorite Web language:</p>
+    <form style="color: red">
       <input type="radio" id="html" name="fav_language" value="HTML" />
       <label for="html">HTML</label><br />
       <input type="radio" id="css" name="fav_language" value="CSS" />
@@ -70,6 +90,8 @@
       />
       <label for="javascript">JavaScript</label>
     </form>
-    <div></div>
+    <div>
+      <span id="example-id">This span has a id</span>
+    </div>
   </body>
 </html>
